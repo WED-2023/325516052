@@ -3,6 +3,8 @@
 <head>
 <link rel="stylesheet" type="text/css" href="style.css" />
 </head>
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v22.0"></script>
 <body>
   <div id="menu">
     <a href="#about">About Me</a>
@@ -17,7 +19,7 @@
   <section id="about" class="section">
     <h2>About Me</h2>
     <br>
-    <h4>
+    <h4 class="fire-text">
       Professor Zev Ardon is the head of the Wizardry Department at Ben Gurion University (BGU), known for his brilliance and eccentricity in the magical community. Born in Tel Aviv, Zev's early fascination with the arcane arts began as a child, inspired by his grandfather, a renowned Kabbalist and scholar of ancient magical texts. His grandfather's teachings on the balance between knowledge and power shaped Zev’s view of magic as a force to be respected and carefully wielded. After studying at the prestigious Arcanum Institute in Prague, he returned to Israel, eager to blend his love for ancient magic with modern advancements in magical theory and technology.
     <br>
     <br>
@@ -71,18 +73,79 @@ Known for his calm demeanor and sharp intellect, Zev Ardon continues to shape th
 </section>
 <section id="like" class="section">
   <h2>Give Me a Like</h2>
+  <br>
+  <div class="fb-like" 
+  data-href="https://wed-2023.github.io/325516052/" 
+  data-width="" 
+  data-layout="button" 
+  data-action="like" 
+  data-size="large" 
+  data-share="true">
+</div>
 </section>
 
 <section id="qrcoder" class="section">
   <h2>Scan My Code</h2>
+  <br>
+  <img src="qrcode.bmp" alt="Image 3"><div class="qr-item"> 
 </section>
 
 <section id="spa" class="section">
   <h2>Q&A</h2>
+  <br>
+  <table class="qa-table">
+    <thead>
+      <tr>
+        <th>שאלה</th>
+        <th>תשובה</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>הבדלים בין Web1, Web2 ו-Web3</td>
+        <td>
+          <ul>
+            <li><strong>Web1:</strong> המידע הוא סטטי, בעיקר קריאה בלבד. אין אינטראקטיביות עם המשתמש.</li>
+            <li><strong>Web2:</strong> מאפשר אינטראקטיביות ושיתוף פעולה עם המשתמשים (רשתות חברתיות, בלוגים, ויקיפדיה).</li>
+            <li><strong>Web3:</strong> מבוסס על טכנולוגיות דיגיטליות מבוזרות (בלוקצ'יין), מאפשר למשתמשים להיות הבעלים של הנתונים והאפליקציות.</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td>הסבר על ההבדלים דרך תרחיש שימוש</td>
+        <td>
+          <p><strong>ב- Web1:</strong> כאשר משתמש מחפש "תופעות לוואי של תרופות" הוא מחפגש מתוך רשימה פשוטה של תוצאות מהאינטרנט, בעיקר אתרי מידע רפואי סטטי.</p>
+          <p><strong>ב- Web2:</strong> התוצאות יהיו אינטראקטיביות יותר, כמו רשומות בבלוגים, רשתות חברתיות, ופורומים שבהם אנשים יכולים לשתף ניסיון אישי או חוות דעת.</p>
+          <p><strong>ב- Web3:</strong> התוצאות עשויות לכלול מידע שמאוחסן באופן מבוזר, עם גישה למידע על תרופות מאתרים שמבוססים על טכנולוגיות כמו בלוקצ'יין, בהם המשתמשים יכולים להבטיח שהמידע לא עבר שינוי.</p>
+        </td>
+      </tr>
+    </tbody>
+  </table>
 </section>
 
 <section id="contact" class="section">
   <h2>Contact Me</h2>
+  <br>
+  <form action="mailto:danzas@post.bgu.ac.il" method="post" enctype="text/plain">
+    <label for="email">כתובת דוא"ל:</label>
+    <input type="email" id="email" name="email" required placeholder="הכנס את הדואל"ל שלך">
+    <br><br>
+    
+    <label for="message">גוף ההודעה:</label>
+    <textarea id="message" name="message" required placeholder="הכנס את תוכן ההודעה שלך"></textarea>
+    <br><br>
+
+    <label for="selectOption">בחר את ענייןך:</label>
+    <select id="selectOption" name="option" required>
+      <option value="שאלה לגבי קורס">שאלה לגבי קורס</option>
+      <option value="בקשה למידע נוסף">בקשה למידע נוסף</option>
+      <option value="בעיה טכנית">בעיה טכנית</option>
+      <option value="שאלה כללית">שאלה כללית</option>
+    </select>
+    <br><br>
+
+    <button type="submit">שלח</button>
+  </form>
 </section>
 
 <script type="text/javascript">
